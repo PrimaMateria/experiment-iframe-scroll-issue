@@ -13,16 +13,21 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 500px;
+    height: 1500px;
     background-image: linear-gradient(to bottom, lightblue, white);
   }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/seamless@1.4.1/build/seamless.child.min.js"></script>
 
 </head>
 
 <body>
+  <script type="text/javascript">
+    window.seamless.connect();
+  </script>
+
+  <a href="#"></a>
   anchor.scrollIntoView();
-  <a href="#">anchor</a>
 
   <div class="container">
     <button>Scroll to top</button>

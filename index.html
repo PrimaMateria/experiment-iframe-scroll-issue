@@ -11,10 +11,17 @@
   grid-gap: 10px;
 }
 </style>
-
+<script src="https://cdn.jsdelivr.net/npm/seamless@1.4.1/build/seamless.parent.min.js"></script>
 </head>
 
 <body>
+  <script type="text/javascript">
+    window.onload = function() {
+      const iframes = document.querySelectorAll('iframe');
+      iframes.forEach((iframe) => window.seamless(iframe));
+    };
+  </script>
+
   <div class="container">
     <iframe height="200" width="200" src="scrollTo.html" ></iframe>
     <iframe height="200" width="200" src="scrollIntoView.html"></iframe>
