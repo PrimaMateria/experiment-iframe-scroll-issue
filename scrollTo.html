@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>foo</title>
+
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 500px;
+    background-image: linear-gradient(to bottom, lightblue, white);
+  }
+</style>
+
+</head>
+
+<body>
+  window.scrollTo(0,0);
+
+  <div class="container">
+    <button>Scroll to top</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const button = document.querySelector('button');
+      button.onclick = function () {
+        window.scrollTo(0,0);
+      }
+    });
+  </script>
+
+</body>
+</html> 
